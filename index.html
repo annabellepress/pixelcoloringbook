@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pixel Colorbook</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/boh4qqw.css">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+	<header>
+		<span class="title">Pixel Colorbook</span>
+		<span id="guide" class="button">Guide</span>
+		<div id="guideSteps">
+			<span class="close">&times;</span>
+
+			<li>Choose a pattern from the dropdown menu</li>
+			<li>Select a color from the pattern's color palette</li>
+			<li>Cick or drag to paint!</li>
+			<li>If you mess up, click bottom square to erase your mistakes</li>
+<!-- 			<li>If you're feeling sentimental, click save to download the drawing to your computer!</li> -->
+			<li>To start from the beginning, click "Clear Grid" or choose another pattern</li>
+		</div>
+	</header>
+
+<div class="dropdown">
+	<span class="button" id="dropdownBtn">Choose Drawing</span>
+	<span class="button" id="reset">Clear Grid</span>
+<!-- 	<a class="button" id="save" href="" download>Save</a> -->
+
+	<div id="dropdown-content">
+		<span class="button" id="strawberry">Strawberry</span>
+		<span class="button" id="cherries">Cherries</span>
+		<span class="button" id="pomegranate">Pomegranate</span>
+		<span class="button" id="dragonFruit">Dragon Fruit</span>
+		<span class="button" id="mango">Mango</span>
+	</div>
+</div>
+
+<div class="content-wrapper">
+
+<div class="container">
+<div class="canvas" id="grid-container"></div>
+
+
+<img class="pattern" id="sPat" src="assets/strawberry.jpg">
+<img class="pattern" id="cPat" src="assets/cherries.jpg">
+<img class="pattern" id="pPat" src="assets/pomegranate.jpg">
+<img class="pattern" id="dFPat" src="assets/dragonfruit.jpg">
+<img class="pattern" id="mPat" src="assets/mango.jpg">
+
+</div>
+
+<div class="colorPalette">
+	<div class="color1" id="colorOptions"></div>
+	<div class="color2" id="colorOptions"></div>
+	<div class="color3" id="colorOptions"></div>
+	<div class="color4" id="colorOptions"></div>
+	<div class="color5" id="colorOptions"></div>
+	<div class="color6" id="colorOptions"></div>
+	<div class="eraser">
+		<img class="eraserImg" src="assets/eraser.png">
+	</div>
+
+</div>
+
+
+
+</div>
+
+<script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
